@@ -110,7 +110,7 @@ const addCollaborator = async (req, res, next) => {
   }
 };
 
-// DELETE /api/projects/:projectId/collaborators/:collaboratorId  (owner only)
+// DELETE /api/projects/:projectId/collaborators/:collaboratorId
 const removeCollaborator = async (req, res, next) => {
   try {
     if (req.role !== "owner") {
